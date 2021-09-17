@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Currency EXchange</title>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <section>
+            <h1>The Currency <span>EX</span>change</h1>
+        </section>
+
+        <section class="currencyForm">
+            <form action="">
+                <div class="currencies">
+                    <label for="currency1">Convert this currency:</label>
+                    <select name="currency1" id="currency1">
+                        <option value="USD">American Dollar</option>
+                        <option value="CAD" selected>Canadian Dollar</option>
+                    </select>
+
+                    <label for="currency2">to this currency:</label>
+                    <select name="currency2" id="currency2">
+                        <option value="USD" selected>American Dollar</option>
+                        <option value="CAD">Canadian Dollar</option>
+                    </select>
+                </div>
+
+                <div class="amount">
+                    <label for="amount">How much would you like to convert?</label>
+                    <input type="text" name="amount" id="amount">
+                    <button>Convert</button>
+                </div>
+
+                <div class="reset">
+                    <button>Reset!</button>
+                </div>
+            </form>
+        </section>
+    </header>
+
+    <main>
+        <h2>Results go here:</h2>
+    </main>
+
+    <footer>
+        <p>&copy; <a href="#">Hans Christian Severino</a></p>
+    </footer>
+
+    <script src='./javascript/script.js'></script>
+</body>
+</html>
