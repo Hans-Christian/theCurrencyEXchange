@@ -5,48 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Currency EXchange</title>
-    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <section>
+    <section class="landingPage">
+        <header>
             <h1>The Currency <span>EX</span>change</h1>
-        </section>
+        </header>
 
-        <section class="currencyForm">
-            <form action="">
+        <div class="app">
+            <form>
+                <div class="fromAmount">
+                    <label for="fromAmount">How much would you like to convert?</label>
+                    <input type="number" name="fromAmount" id="fromAmount">
+                </div>
+
                 <div class="currencies">
-                    <label for="currency1">Convert this currency:</label>
-                    <select name="currency1" id="currency1">
-                        <option value="USD">American Dollar</option>
-                        <option value="CAD" selected>Canadian Dollar</option>
+                    <label for="fromCurrency">From:</label>
+                    <select name="fromCurrency" id="fromCurrency">
+                        <option>Select a currency</option>
                     </select>
-
-                    <label for="currency2">to this currency:</label>
-                    <select name="currency2" id="currency2">
-                        <option value="USD" selected>American Dollar</option>
-                        <option value="CAD">Canadian Dollar</option>
+            
+                    <label for="toCurrency">To:</label>
+                    <select name="toCurrency" id="toCurrency">
+                        <option>Select a currency</option>
                     </select>
                 </div>
 
-                <div class="amount">
-                    <label for="amount">How much would you like to convert?</label>
-                    <input type="text" name="amount" id="amount">
-                    <button>Convert</button>
+                <div class="toAmount">
+                    <p>Your result: <span>0</span></p>
                 </div>
-
+            
                 <div class="reset">
-                    <button>Reset!</button>
-                    <p>Check check check</p>
+                    <button>Reset</button>
                 </div>
             </form>
-        </section>
-    </header>
-
-    <main>
-        <h2>Results go here:</h2>
-    </main>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; <a href="#">Hans Christian Severino</a></p>

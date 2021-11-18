@@ -1,0 +1,45 @@
+.landingPage {
+  height: 100vh;
+  background-image: url("../assets/money.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  padding: 50px 0 0 50px;
+  margin-bottom: 60px;
+}
+
+h1 {
+  width: 1203px;
+  margin: 0;
+  padding: 12px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.app {
+  width: 1140px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.currencies,
+.fromAmount,
+.toAmount {
+  margin-bottom: 20px;
+}
+
+.reset {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  width: 175px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 0;
+}

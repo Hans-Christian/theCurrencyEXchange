@@ -1,13 +1,21 @@
-// font-family: 'Boogaloo', cursive;
+// font-family: 'Fredericka the Great', cursive;
 
 // font-family: 'Poppins', sans-serif;
 
-h1 {
-  font-family: "Boogaloo", cursive;
-  font-size: 5rem;
-}
-
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+h1,
+span {
+  font-family: "Fredericka the Great", cursive;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+.app {
+  font-size: 3rem;
 }

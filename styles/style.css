@@ -298,12 +298,99 @@ img {
   display: block;
 }
 
-h1 {
-  font-family: "Boogaloo", cursive;
-  font-size: 5rem;
-}
-
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+h1,
+span {
+  font-family: "Fredericka the Great", cursive;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+.app {
+  font-size: 3rem;
+}
+
+h1 {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.toAmount span {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.app {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1,
+button,
+span,
+footer p,
+footer a {
+  color: white;
+}
+
+.reset button {
+  background: #cc0202;
+}
+
+footer {
+  background: black;
+}
+
+.landingPage {
+  height: 100vh;
+  background-image: url("../assets/money.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  padding: 50px 0 0 50px;
+  margin-bottom: 60px;
+}
+
+h1 {
+  width: 1203px;
+  margin: 0;
+  padding: 12px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.app {
+  width: 1140px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.currencies,
+.fromAmount,
+.toAmount {
+  margin-bottom: 20px;
+}
+
+.reset {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  width: 175px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0;
 }
