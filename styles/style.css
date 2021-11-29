@@ -333,8 +333,8 @@ h1,
 button,
 span,
 .errorMessage p,
-.footer,
-.footer a {
+.profile,
+.profile a {
   color: white;
 }
 
@@ -346,17 +346,18 @@ span,
   background: #008952;
 }
 
-.footer {
+.profile {
   background: black;
 }
 
 .landingPage {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../assets/money.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding-bottom: 50px;
 }
 
 header {
@@ -384,12 +385,12 @@ h1 {
 }
 
 .reset,
-.footer {
+.profile {
   text-align: center;
 }
 
 button,
-.footer {
+.profile {
   padding: 5px 0;
 }
 
@@ -436,9 +437,15 @@ button {
   display: none;
 }
 
-.errorMessage,
-.footer {
+.errorMessage {
   position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.profile {
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
