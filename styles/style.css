@@ -356,7 +356,7 @@ span,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: local;
+  background-attachment: fixed;
   padding-bottom: 50px;
 }
 
