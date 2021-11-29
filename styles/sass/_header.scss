@@ -31,15 +31,54 @@ h1 {
   margin-bottom: 20px;
 }
 
+.reset,
+.footer {
+  text-align: center;
+}
+
+button,
+.footer {
+  padding: 5px 0;
+}
+
 .reset {
   width: 100%;
-  text-align: center;
+}
+
+[name="fromAmount"],
+[name="fromCurrency"],
+[name="toCurrency"],
+button,
+.errorMessage {
+  cursor: pointer;
 }
 
 button {
   width: 175px;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
-  padding: 5px 0;
+}
+
+.errorMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.errorMessage p {
+  margin-bottom: 10px;
+}
+
+.hiddenErrorMessage {
+  display: none;
+}
+
+.errorMessage,
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

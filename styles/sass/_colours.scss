@@ -2,7 +2,8 @@ h1 {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.toAmount span {
+.toAmount span,
+.errorMessage {
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -13,8 +14,9 @@ h1 {
 h1,
 button,
 span,
-footer p,
-footer a {
+.errorMessage p,
+.footer,
+.footer a {
   color: rgb(255, 255, 255);
 }
 
@@ -22,6 +24,10 @@ footer a {
   background: rgb(204, 2, 2);
 }
 
-footer {
+.errorMessage button {
+  background: rgb(0, 137, 82);
+}
+
+.footer {
   background: rgb(0, 0, 0);
 }

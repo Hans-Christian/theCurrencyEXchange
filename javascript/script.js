@@ -5,6 +5,8 @@ const fromCurrency = document.querySelector('#fromCurrency');
 const toCurrency = document.querySelector('#toCurrency');
 const toAmount = document.querySelector('.toAmount span');
 const resetBttn = document.querySelector('.reset button');
+const errorMessage = document.querySelector('.errorMessage');
+const closeBttn = document.querySelector('.errorMessage button');
 
 
 /* API related: */
@@ -230,8 +232,12 @@ async function convert(amount, from, to){
 form.addEventListener('input', handleInputs);
 
 async function handleInputs(e){
-    const rawAmount = await convert(fromAmount.value, fromCurrency.value, toCurrency.value);
-    toAmount.textContent = formatCurrency(rawAmount, toCurrency.value);
+    if (fromAmount.value < 0){
+        errorMessage.classList.remove('hiddenErrorMessage');
+    } else{
+        const rawAmount = await convert(fromAmount.value, fromCurrency.value, toCurrency.value);
+        toAmount.textContent = formatCurrency(rawAmount, toCurrency.value);
+    }
 }
 
 
@@ -241,4 +247,20 @@ function formatCurrency(amount, currency){
         style: 'currency',
         currency,
     }).format(amount);
+}
+
+
+/* Listen for when the user clicks anywhere on the error message */
+errorMessage.addEventListener('click', errorMessageClickEvents);
+
+// All the events that will happen when the user clicks anywhere in the error message:
+function errorMessageClickEvents(){
+    // Error message will become hidden again:
+    errorMessage.classList.add('hiddenErrorMessage');
+
+    // The fromAmount value will reset to blank:
+    fromAmount.value = '';
+
+    // The toAmount value will reset to 0;
+    toAmount.textContent = 0;
 }

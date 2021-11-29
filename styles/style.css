@@ -320,7 +320,8 @@ h1 {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.toAmount span {
+.toAmount span,
+.errorMessage {
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -331,8 +332,9 @@ h1 {
 h1,
 button,
 span,
-footer p,
-footer a {
+.errorMessage p,
+.footer,
+.footer a {
   color: white;
 }
 
@@ -340,7 +342,11 @@ footer a {
   background: #cc0202;
 }
 
-footer {
+.errorMessage button {
+  background: #008952;
+}
+
+.footer {
   background: black;
 }
 
@@ -377,20 +383,154 @@ h1 {
   margin-bottom: 20px;
 }
 
+.reset,
+.footer {
+  text-align: center;
+}
+
+button,
+.footer {
+  padding: 5px 0;
+}
+
 .reset {
   width: 100%;
-  text-align: center;
+}
+
+[name="fromAmount"],
+[name="fromCurrency"],
+[name="toCurrency"],
+button,
+.errorMessage {
+  cursor: pointer;
 }
 
 button {
   width: 175px;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
-  padding: 5px 0;
 }
 
-footer {
-  text-align: center;
-  padding: 5px 0;
+.errorMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+}
+
+.errorMessage p {
+  margin-bottom: 10px;
+}
+
+.hiddenErrorMessage {
+  display: none;
+}
+
+.errorMessage,
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 1302px) {
+  body {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 8rem;
+    width: 971px;
+  }
+  .app {
+    font-size: 2.5rem;
+    width: 940px;
+  }
+}
+
+@media (max-width: 1069px) {
+  h1 {
+    font-size: 6rem;
+    width: 739px;
+  }
+  .app {
+    font-size: 2rem;
+    width: 756px;
+  }
+}
+
+@media (max-width: 838px) {
+  header {
+    padding: 50px 0 0 0;
+    margin-bottom: 50px;
+  }
+  h1,
+  .app .fromAmount,
+  .app .currencies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .app .fromAmount #fromAmount,
+  .app .currencies {
+    width: 320px;
+  }
+  h1 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 445px;
+    margin: 0 auto;
+  }
+  .app {
+    width: 460px;
+  }
+  .app label {
+    margin-bottom: 2px;
+  }
+  .app .currencies #fromCurrency {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 490px) {
+  h1 {
+    font-size: 5rem;
+    width: 375px;
+  }
+  .app {
+    width: 380px;
+  }
+}
+
+@media (max-width: 419px) {
+  h1,
+  .app {
+    width: 100%;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  body,
+  .app {
+    font-size: 1.8rem;
+  }
+  .app .fromAmount #fromAmount,
+  .app .currencies {
+    width: 280px;
+  }
 }

@@ -11,7 +11,7 @@
 <body>
     <section class="landingPage">
         <header>
-            <h1>The Currency <span>EX</span>change</h1>
+            <h1>The Currency <span>EXchange</span></h1>
         </header>
 
         <div class="app">
@@ -26,7 +26,7 @@
                     <select name="fromCurrency" id="fromCurrency">
                         <option>Select a currency</option>
                     </select>
-            
+
                     <label for="toCurrency">To:</label>
                     <select name="toCurrency" id="toCurrency">
                         <option>Select a currency</option>
@@ -36,17 +36,20 @@
                 <div class="toAmount">
                     <p>Your result: <span>0</span></p>
                 </div>
-            
+
                 <div class="reset">
                     <button>Reset</button>
                 </div>
             </form>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; <a href="#">Hans Christian Severino</a></p>
-    </footer>
+        <div class="errorMessage hiddenErrorMessage">
+            <p>Error! Please enter a valid number.</p>
+            <button>Close</button>
+        </div>
+
+        <p class="footer">&copy; <a href="#">Hans Christian Severino</a></p>
+    </section>
 
     <script src='./javascript/script.js'></script>
 </body>
