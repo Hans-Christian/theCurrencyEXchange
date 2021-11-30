@@ -515,6 +515,9 @@ button {
 }
 
 @media (max-width: 490px) {
+  .landingPage {
+    background-attachment: local;
+  }
   h1 {
     font-size: 5rem;
     width: 375px;
@@ -539,5 +542,16 @@ button {
   .app .fromAmount #fromAmount,
   .app .currencies {
     width: 280px;
+  }
+}
+
+@media (max-height: 360px) and (max-width: 800px) {
+  .landingPage {
+    background-attachment: local;
+  }
+  h1 {
+    display: block;
+    width: 565px;
+    font-size: 4.5rem;
   }
 }
