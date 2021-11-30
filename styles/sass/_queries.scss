@@ -31,42 +31,78 @@
   }
 }
 
-// @media (max-width: 838px) {
-//   header {
-//     padding: 50px 0 0 0;
-//     margin-bottom: 50px;
-//   }
+@media (max-width: 838px) {
+  header {
+    padding: 50px 0 0 0;
+    margin-bottom: 50px;
+  }
 
-//   h1,
-//   .app .fromAmount,
-//   .app .currencies {
-//     display: flex;
-//     flex-direction: column;
-//   }
+  h1,
+  .app .fromAmount,
+  .app .currencies {
+    display: flex;
+    flex-direction: column;
+  }
 
-//   .app .fromAmount #fromAmount,
-//   .app .currencies {
-//     width: 320px;
-//   }
+  .app .fromAmount #fromAmount,
+  .app .currencies {
+    width: 320px;
+  }
 
-//   h1 {
-//     align-items: center;
-//     width: 445px;
-//     margin: 0 auto;
-//   }
+  h1 {
+    align-items: center;
+    width: 445px;
+    margin: 0 auto;
+  }
 
-//   .app {
-//     width: 460px;
-//   }
+  .app {
+    width: 460px;
+  }
 
-//   .app label {
-//     margin-bottom: 2px;
-//   }
+  .app label {
+    margin-bottom: 2px;
+  }
 
-//   .app .currencies #fromCurrency {
-//     margin-bottom: 20px;
-//   }
-// }
+  .app .currencies #fromCurrency {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 490px) {
+  .landingPage{
+    background-attachment: local;
+  }
+
+  h1 {
+    font-size: 5rem;
+    width: 375px;
+  }
+
+  .app {
+    width: 380px;
+  }
+}
+
+@media (max-width: 419px) {
+  h1,
+  .app {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  body,
+  .app {
+    font-size: 1.8rem;
+  }
+
+  .app .fromAmount #fromAmount,
+  .app .currencies {
+    width: 280px;
+  }
+}
 
 @media (max-width: 860px) and (max-height: 400px){
   .landingPage {
@@ -117,41 +153,5 @@
 
   .app .currencies #fromCurrency {
     margin: 0;
-  }
-}
-
-@media (max-width: 490px) {
-  .landingPage{
-    background-attachment: local;
-  }
-
-  h1 {
-    font-size: 5rem;
-    width: 375px;
-  }
-
-  .app {
-    width: 380px;
-  }
-}
-
-@media (max-width: 419px) {
-  h1,
-  .app {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 4.5rem;
-  }
-
-  body,
-  .app {
-    font-size: 1.8rem;
-  }
-
-  .app .fromAmount #fromAmount,
-  .app .currencies {
-    width: 280px;
   }
 }
