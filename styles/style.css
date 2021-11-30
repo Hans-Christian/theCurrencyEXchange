@@ -546,9 +546,6 @@ button {
 }
 
 @media (max-height: 400px) and (max-width: 860px) {
-  body {
-    overflow: hidden;
-  }
   .landingPage {
     background-attachment: local;
   }
@@ -561,5 +558,12 @@ button {
     width: 624px;
     font-size: 5rem;
     margin: 0 auto;
+  }
+  .app .fromAmount,
+  .app .currencies {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
