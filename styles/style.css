@@ -560,3 +560,21 @@ button {
     margin: 0 auto;
   }
 }
+
+@media (max-height: 400px) and (max-width: 838px) {
+  .app {
+    font-size: 1.7rem;
+    width: 700px;
+  }
+  .app .fromAmount,
+  .app .currencies {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .app .fromAmount #fromAmount,
+  .app .currencies {
+    width: 263px;
+  }
+}

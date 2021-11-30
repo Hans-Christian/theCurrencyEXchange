@@ -100,19 +100,36 @@
 }
 
 @media (max-height: 400px) and (max-width: 860px){
-  .landingPage{
+  .landingPage {
     background-attachment: local;
   }
 
-  header{
+  header {
     padding-top: 25px;
     margin-bottom: 25px;
   }
 
-  h1{
+  h1 {
     display: block;
     width: 624px;
     font-size: 5rem;
     margin: 0 auto;
+  }
+}
+
+@media (max-height: 400px) and (max-width: 838px){
+  .app {
+    font-size: 1.7rem;
+    width: 700px;
+  }
+
+  .app .fromAmount,
+  .app .currencies {
+    flex-direction: row;
+  }
+
+  .app .fromAmount #fromAmount,
+  .app .currencies {
+    width: 263px;
   }
 }
