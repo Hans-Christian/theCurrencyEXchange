@@ -98,6 +98,10 @@
     font-size: 1.8rem;
   }
 
+  .app .toAmount span {
+    font-size: 2rem;
+  }
+
   .app .fromAmount #fromAmount,
   .app .currencies {
     width: 280px;
@@ -127,6 +131,10 @@
   .app {
     font-size: 1.7rem;
     width: 700px;
+  }
+
+  .app .toAmount span {
+    font-size: 2rem;
   }
 
   .app .fromAmount,
