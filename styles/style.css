@@ -545,13 +545,21 @@ button {
   }
 }
 
-@media (max-height: 360px) and (max-width: 800px) {
+@media (max-height: 400px) and (max-width: 860px) {
+  body {
+    overflow: hidden;
+  }
   .landingPage {
     background-attachment: local;
   }
+  header {
+    padding-top: 25px;
+    margin-bottom: 25px;
+  }
   h1 {
     display: block;
-    width: 565px;
-    font-size: 4.5rem;
+    width: 624px;
+    font-size: 5rem;
+    margin: 0 auto;
   }
 }
