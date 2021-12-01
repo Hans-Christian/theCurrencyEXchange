@@ -140,6 +140,7 @@
   .app .fromAmount,
   .app .currencies {
     flex-direction: row;
+    align-items: baseline;
   }
 
   .app .fromAmount #fromAmount,
